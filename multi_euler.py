@@ -59,7 +59,7 @@ def main():
 	plt.grid(linestyle="--", color="#ddd")
 
 	for n in range(0, 3):
-		tiempos, valores_x, valores_y = metodo_euler(t0 = 0.1, tfinal = 20, N = 1000, x0 = 0, y0 = 1, f = Bessel_Generator(n))
+		tiempos, valores_x, valores_y = metodo_euler(t0 = 0.1, tfinal = 20, N = 100000, x0 = 0, y0 = 1, f = Bessel_Generator(n))
 		ax.plot(tiempos, valores_x, label = f"$n = {n}$")
 
 	# tiempos_scipy = linspace(-10, 2.5, 1000)
